@@ -1,0 +1,278 @@
+.m_values
+  background url("../images/bg-3.jpg") no-repeat 50% 50%
+  background-size cover
+  padding-bottom 60px
+  .values-footer
+    light()
+    clearfix()
+    margin-top 50px
+    width 830px
+    margin-left auto
+    margin-right auto
+    color #fff
+    font-size 18px
+    position relative
+    left 25px
+    @media screen and (max-width: 1000px)
+      left 0
+      width 100%
+    .profit,
+    .quotes
+      position relative
+      float left
+      width 50%
+      @media screen and (max-width: 1000px)
+        width 100%
+        float none
+        br
+          display none
+        span.block
+          display inline
+      &:before
+        content ''
+        position absolute
+        left 55px
+        top 50%
+        width 2px
+        height 33px
+        background #656f75
+        margin-top -(@height/2)
+        @media screen and (max-width: 1000px)
+          left 60px
+      .small
+        font-size 14px
+        @media screen and (max-width: 1000px)
+          display block
+          margin-top 5px
+    .profit
+      padding-left 65px
+      @media screen and (max-width: 1000px)
+        margin-bottom 20px
+        padding-left 75px
+      &:after
+        content '33'
+        position absolute
+        left 0
+        top 50%
+        height 43px
+        line-height 43px
+        font-size 43px
+        color $blue
+        margin-top -(@height/2)
+    .quotes
+      padding-left 75px
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -228px -34px;
+        width: 40px;
+        height: 39px;
+        position absolute
+        left 10px
+        top 0
+        @media screen and (max-width: 1000px)
+          left 5px
+      &:before
+        top 2px
+        margin-top 0
+        left 60px
+      .small
+        position relative
+        top -4px
+  .tabs
+    box-shadow 1px 1px 1px rgba(0,0,0,.25)
+    border-radius 5px
+    width 780px
+    margin-left auto
+    margin-right auto
+    @media screen and (max-width: 1000px)
+      width 100%
+    .tabs-nav
+      width 100%
+      clearfix()
+      li
+        float left
+        width 33.333%
+        height 50px
+        line-height 50px
+        @media screen and (max-width: 740px)
+          width 100%
+        &:first-child a
+          border-radius 5px 0 0 0
+          @media screen and (max-width: 740px)
+            border-radius 5px 5px 0 0
+        &:last-child a
+          border-radius 0 5px 0 0
+          @media screen and (max-width: 740px)
+            border-radius 0
+        a
+          light()
+          display block
+          width 100%
+          height 100%
+          text-align center
+          background rgba(255,255,255,.2)
+          position relative
+          color #fff
+          text-shadow 1px 1px 1px rgba(0,0,0,.35)
+          font-size 18px
+          .icon-1, .icon-2, .icon-3
+            @media screen and (max-width: 740px)
+              display inline-block
+              position static !important
+              vertical-align middle
+              margin-right 10px
+          .icon-1
+            position absolute
+            left 15px
+            top 14px
+            background: url('../images/sprite.png') no-repeat -111px -248px;
+            width: 23px;
+            height: 24px;
+          .icon-2
+            position absolute
+            left 15px
+            top 12px
+            background: url('../images/sprite.png') no-repeat -55px -248px;
+            width: 27px;
+            height: 24px;
+          .icon-3
+            position absolute
+            left 15px
+            top 12px
+            background: url('../images/sprite.png') no-repeat -7px -244px;
+            width: 26px;
+            height: 26px;
+          &.current
+            position relative
+            height 60px
+            background url("../images/pattern.png") 0 0
+            @media screen and (max-width: 740px)
+              height 50px
+            &:before
+              content ''
+              position: absolute;
+              width: 50%;
+              left: 0;
+              bottom: 0;
+              border-bottom: 10px solid #485565;
+              border-right: 10px solid transparent;
+              display: block;
+              content: " ";
+              @media screen and (max-width: 740px)
+                display none
+            &:after
+              position: absolute;
+              left: 50%;
+              bottom: 0;
+              right: 0;
+              width 50%
+              border-bottom: 10px solid #485565;
+              border-left: 10px solid transparent;
+              display: block;
+              content: " ";
+              @media screen and (max-width: 740px)
+                display none
+    .tabs-content
+      light()
+      background #485565
+      padding 20px
+      color #fff
+      font-size 18px
+      border-radius 0 0 5px 5px
+      .mobile
+        display none
+        @media screen and (max-width: 740px)
+          display block
+      .desktop
+        display block
+        @media screen and (max-width: 740px)
+          display none
+      .row,
+      .mobile
+        clearfix()
+        margin-bottom 40px
+        padding-top 0
+        @media screen and (max-width: 740px)
+          text-align center
+        &:last-child
+          margin-bottom 0
+        > div
+          float left
+          width 20%
+          height 100px
+          position relative
+          text-align center
+          padding-top 75px
+          @media screen and (max-width: 740px)
+            width 32%
+            float none
+            display inline-block
+            vertical-align top
+            text-align center
+            margin-bottom 20px
+          @media screen and (max-width: 420px)
+            width 48%
+          &:after
+            content ""
+            position absolute
+            left 50%
+            top 0
+          &.icon-1:after
+            background: url('../images/logotypes.png') no-repeat 0 -14px;
+            width: 50px;
+            height: 61px;
+            margin-left -(@width/2)
+          &.icon-2:after
+            background: url('../images/logotypes.png') no-repeat -126px -29px;
+            width: 110px;
+            height: 45px;
+            margin-left -(@width/2)
+            top 15px
+          &.icon-3:after
+            background: url('../images/logotypes.png') no-repeat -322px -21px;
+            width: 76px;
+            height: 63px;
+            margin-left -25px
+          &.icon-4:after
+            background: url('../images/logotypes.png') no-repeat -467px -29px;
+            width: 47px;
+            height: 46px;
+            margin-left -(@width/2)
+            top 15px
+          &.icon-5:after
+            background: url('../images/logotypes.png') no-repeat -603px -28px;
+            width: 46px;
+            height: 47px;
+            margin-left -(@width/2)
+            top 15px
+          &.icon-6:after
+            background: url('../images/logotypes.png') no-repeat -1px -144px;
+            width: 48px;
+            height: 51px;
+            margin-left -(@width/2)
+          &.icon-7:after
+            background: url('../images/logotypes.png') no-repeat -113px -144px;
+            width: 150px;
+            height: 51px;
+            margin-left -(@width/2)
+          &.icon-8:after
+            background: url('../images/logotypes.png') no-repeat -321px -144px;
+            width: 61px;
+            height: 51px;
+            margin-left -(@width/2)
+          &.icon-9:after
+            background: url('../images/logotypes.png') no-repeat -467px -145px;
+            width: 50px;
+            height: 50px;
+            margin-left -(@width/2)
+          &.icon-10:after
+            background: url('../images/logotypes.png') no-repeat -579px -155px;
+            width: 94px;
+            height: 31px;
+            margin-left -(@width/2)
+
+
+
+
+
+

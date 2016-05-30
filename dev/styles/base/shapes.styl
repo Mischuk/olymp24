@@ -1,0 +1,234 @@
+@media screen and (min-width: 1000px)
+  .m_lead
+    // Step 1
+    .headling
+      position relative
+      &:before
+        content ''
+        width 95px
+        height 2px
+        background $blue
+        position absolute
+        left 50%
+        top 142px
+        margin-left -(@width/2)
+      &:after
+        content ''
+        width 417px
+        height 198px
+        position absolute
+        left 0
+        top 140px
+        background url("../images/shapes/1.png") no-repeat 0 0
+    // Step 2
+    .form-label-submit
+      position relative
+      &:after
+        content ''
+        width 234px
+        height 80px
+        position absolute
+        left -255px
+        bottom 29px
+        background url("../images/shapes/2.png") no-repeat 0 0
+
+  //Step 3
+  .m_how
+    .headling
+      position relative
+      &:before
+        content ""
+        position absolute
+        width 239px
+        height 279px
+        right 0
+        bottom 92px
+        background url("../images/shapes/3.png") no-repeat 0 0
+        z-index 10
+      // Step 4
+      &:after
+        content ''
+        width 43px
+        height 336px
+        position absolute
+        right 0
+        top 100px
+        background url("../images/shapes/4.png") no-repeat 0 0
+        z-index 10
+  // Step 5
+  .m_how .video:after
+    content ""
+    width 397px
+    height 325px
+    background url("../images/shapes/5.png") no-repeat 0 0
+    position absolute
+    left -429px
+    bottom -216px
+    z-index 10
+
+  // Step 6
+  .m_choose .desc .available
+    &:after
+      content ''
+      width 275px
+      height 421px
+      background url("../images/shapes/6.png") no-repeat 0 0
+      position absolute
+      left 82px
+      top -34px
+      z-index 10
+
+  // Step 6-1
+  .m_choose .devices-wrap
+    &:after
+      content ''
+      width 99px
+      height 238px
+      position absolute
+      left 2px
+      bottom -598px
+      background url("../images/shapes/6-1.png") no-repeat 0 0
+      z-index 10
+  // Step 6-2
+  .m_numbers .col-1-of-3:after
+    content ""
+    width 161px
+    height 7px
+    background url("../images/shapes/6-3.png") no-repeat 0 0
+    position absolute
+    right -69px
+    top 49px
+  .m_numbers .col-1-of-3:first-child + .col-1-of-3:after
+    right -80px
+  .m_numbers .col-1-of-3:last-child:after
+    display none
+
+  // Step 6-3
+  .m_numbers .desc
+    position relative
+    &:after
+      content ''
+      width 77px
+      height 7px
+      position absolute
+      left 50%
+      margin-left -(@width/2)
+      bottom 57px
+      background url("../images/shapes/6-4.png") no-repeat 0 0
+      z-index 10
+
+  // Step 7
+  .m_values .headling
+    position relative
+    &:after
+      content ''
+      width 43px
+      height 146px
+      background url("../images/shapes/8.png") no-repeat 0 0
+      position absolute
+      left 0
+      top 72px
+    &:before
+      content ""
+      width 71px
+      height 297px
+      position absolute
+      left 0
+      top 270px
+      background url("../images/shapes/8-1.png") no-repeat 0 0
+
+  // Step 8
+  .m_values .values-footer:after
+    content ""
+    width 51px
+    height 179px
+    background url("../images/shapes/9.png") no-repeat 0 0
+    position absolute
+    right -44px
+    top 16px
+    z-index 10
+
+  // Step 8-1
+  .m_values .values-footer:before
+    content ""
+    width 68px
+    height 126px
+    position absolute
+    background url("../images/shapes/9-1.png") no-repeat 0 0
+    right -44px
+    top 230px
+    z-index 10
+
+  // Step 9
+  .m_safe .how
+    position relative
+    &:after
+      content ''
+      position absolute
+      right 0
+      top 7px
+      width 66px
+      height 316px
+      background url("../images/shapes/10.png") no-repeat 0 0
+      z-index 10
+
+  // Step 10
+  .m_guarantee .small-headling
+    position relative
+    &:after
+      content ''
+      width 348px
+      height 89px
+      background url("../images/shapes/10-1.png") no-repeat 0 0
+      position absolute
+      right 0
+      top -34px
+    &:before
+      content ""
+      width 340px
+      height 120px
+      background url("../images/shapes/11.png") no-repeat 0 0
+      position absolute
+      left 2px
+      bottom -97px
+  // Step 10-1
+  .m_guarantee .steps .step-1
+    position relative
+    &:after
+      content ''
+      width 77px
+      height 7px
+      background url("../images/shapes/7.png") no-repeat 0 0
+      position absolute
+      right -33px
+      top 40px
+
+  // Step 11
+  .m_guarantee .steps .step-3:after
+    content ""
+    width 47px
+    height 255px
+    position absolute
+    background url("../images/shapes/12.png") no-repeat 0 0
+    right -60px
+    top 31px
+
+  // Step 12
+  .m_hook .small-title
+    position relative
+    &:after
+      content ''
+      width 471px
+      height 105px
+      background url("../images/shapes/13.png") no-repeat 0 0
+      position absolute
+      right -100px
+      top -55px
+    &:before
+      content: '';
+      width: 100px;
+      height: 2px;
+      background: #27bdef;
+      position: absolute;
+      left 0
+      bottom -26px

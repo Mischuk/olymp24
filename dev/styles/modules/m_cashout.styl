@@ -1,0 +1,140 @@
+.m_cashout
+  background url("../images/bg-6.jpg") no-repeat 50% 50%
+  background-size cover
+  padding-bottom 50px
+  .guarantee
+    text-align center
+    margin-top 40px
+    @media screen and (max-width: 650px)
+      width 280px
+      margin-left auto
+      margin-right auto
+    > .quotes, .deposites, .defend
+      position relative
+      display inline-block
+      vertical-align middle
+      font-size 14px
+      line-height 20px
+      padding-left 60px
+      margin-top 20px
+      cursor default
+      color #fff
+      text-align left
+      @media screen and (max-width: 650px)
+        width 100%
+        display block
+        margin-left 0 !important
+    .defend
+      margin-right 40px
+      margin-left 40px
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -234px -84px;
+        width: 27px;
+        height: 38px;
+        position absolute
+        left 20px
+        top 50%
+        margin-top -(@height/2)
+        @media screen and (max-width: 650px)
+          left 6px
+    .deposites
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -282px -34px;
+        width: 40px;
+        height: 41px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+    .quotes
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -228px -34px;
+        width: 40px;
+        height: 39px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+  .icons
+    clearfix()
+    text-align center
+    height 70px
+    line-height 70px
+    @media screen and (max-width: 650px)
+      height auto
+    &:first-child
+      margin-bottom 20px
+    > div
+      display inline-block
+      vertical-align middle
+      text-align center
+      margin-left 25px
+      margin-right 25px
+      @media screen and (max-width: 830px)
+        margin-left 5px
+        margin-right 5px
+      @media screen and (max-width: 650px)
+        display block
+        margin-left auto
+        margin-right auto
+        margin-top 20px
+        margin-bottom 20px
+      &.desktop-hide
+        display inline-block
+        @media screen and (min-width: 1000px)
+          display none
+      &.mobile-hide
+        display none
+        @media screen and (min-width: 1000px)
+          display inline-block
+    .icon-1
+      background: url('../images/footer-logos.png') no-repeat -207px -12px;
+      width: 111px;
+      height: 34px;
+      &:hover
+        background-position -207px -191px
+    .icon-2
+      background: url('../images/footer-logos.png') no-repeat -394px 0;
+      width: 106px;
+      height: 65px;
+      &:hover
+        background-position -394px -179px
+    .icon-3
+      background: url('../images/footer-logos.png') no-repeat -576px -20px;
+      width: 137px;
+      height: 23px;
+      &:hover
+        background-position -576px -199px
+    .icon-4
+      background: url('../images/footer-logos.png') no-repeat 0 -88px;
+      width: 187px;
+      height: 40px;
+      &:hover
+        background-position 0 -267px
+    .icon-5
+      background: url('../images/footer-logos.png') no-repeat -235px -88px;
+      width: 108px;
+      height: 37px;
+      &:hover
+        background-position -235px -267px
+    .icon-6
+      background: url('../images/footer-logos.png') no-repeat -385px -90px;
+      width: 179px;
+      height: 45px;
+      &:hover
+        background-position -385px -269px
+    .icon-7
+      background: url('../images/footer-logos.png') no-repeat -606px -90px;
+      width: 107px;
+      height: 46px;
+      &:hover
+        background-position -606px -269px
+    .icon-8
+      background: url('../images/footer-logos.png') no-repeat -764px -89px;
+      width: 112px;
+      height: 51px;
+      &:hover
+        background-position -764px -268px

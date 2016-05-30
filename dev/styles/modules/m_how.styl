@@ -1,0 +1,108 @@
+.m_how
+  background url("../images/bg-1.jpg") no-repeat 50% 50%
+  background-size cover
+  height: 582px;
+  @media screen and (max-width: 1000px)
+    height auto
+    padding-bottom 50px
+  .row
+    padding-top 50px
+    @media screen and (max-width: 1000px)
+      padding-top 0
+  .mejs-overlay-button
+    background none
+    width 60px
+    height 60px
+    margin-left -30px
+    margin-top -30px
+    overflow hidden
+    &:after
+      content ''
+      background #fff url('../images/sprite.png') no-repeat 20px 18px;
+      width 60px
+      height 60px
+      position absolute
+      left 0
+      top 0
+      border-radius 50%
+      overflow hidden
+    &:hover
+      width 220px
+      transform translateX(-80px)
+      background rgba(255,255,255,.35)
+      border-radius 40px
+      &:before
+        content "СМОТРЕТЬ ВИДЕО"
+        color #FFF
+        line-height 60px
+        padding-left 70px
+        bold()
+        font-size 14px
+        text-shadow 1px 1px 1px rgba(0,0,0,.25)
+  .mejs-overlay-loading
+    display none !important
+  .mejs-container
+    border-radius 20px
+    overflow hidden
+    @media screen and (max-width: 550px)
+      background none
+      margin-left auto
+      margin-right auto
+      width 100% !important
+      #my-video
+        width 100% !important
+        height 100% !important
+        border-radius 10px
+        overflow hidden
+      .mejs-overlay-play
+        width 100% !important
+        height 100% !important
+      .mejs-poster
+        display none !important
+    //@media screen and (max-width: 550px)
+    //  width 100% !important
+    //  height 305px !important
+    //  .mejs-poster
+    //    width 100% !important
+    //    height 100% !important
+    //    background-size cover
+    //    border-radius 5px
+    //  .mejs-overlay-play
+    //    width 100% !important
+    //    height 100% !important
+  .mejs-container .mejs-controls
+    display none !important
+  .video
+    position relative
+    float right
+    width 481px
+    height 324px
+    background url("../images/video.png") no-repeat 0 0
+    padding-top 10px
+    padding-left 10px
+    padding-right 10px
+    margin-right 60px
+    @media screen and (max-width: 1000px)
+      float none
+      margin-left auto
+      margin-right auto
+    @media screen and (max-width: 550px)
+      width 100%
+      background-size cover
+      background none
+      padding 0
+      height auto
+  .desc
+    width 400px
+    float left
+    color $black
+    @media screen and (max-width: 1000px)
+      width 100%
+      text-align center
+      float none
+    .title
+      bold()
+      font-size 30px
+    p
+      light()
+      font-size 18px

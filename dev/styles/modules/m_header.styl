@@ -1,0 +1,75 @@
+.m_header
+  position fixed
+  left 0
+  width 100%
+  height 80px
+  top 0
+  background #192e33
+  z-index 50
+  color #fff
+  box-shadow 5px 5px 80px rgba(0,0,0,.8)
+  anim()
+  .logo
+    float left
+    @media screen and (max-width: 740px)
+      float none
+    a
+      display block
+      background url('../images/sprite.png') no-repeat 0 -34px
+      width 201px
+      height 45px
+      margin-top 17px
+      anim()
+      @media screen and (max-width: 740px)
+        margin-left auto
+        margin-right auto
+  .guarantee
+    float right
+    @media screen and (max-width: 740px)
+      display none
+    > .quotes, .deposites
+      anim()
+      position relative
+      display inline-block
+      vertical-align middle
+      font-size 14px
+      line-height 20px
+      padding-left 60px
+      margin-top 20px
+      cursor default
+    .deposites
+      margin-left 40px
+      @media screen and (max-width: 768px)
+        margin-left 20px
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -282px -34px;
+        width: 40px;
+        height: 41px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+    .quotes
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -228px -34px;
+        width: 40px;
+        height: 39px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+  &.fixed
+    height 50px
+    z-index 1000
+    box-shadow 0px 0px 5px rgba(0,0,0,.5)
+    .logo a
+      margin-top 10px
+      height 25px
+    .guarantee
+      > .quotes, .deposites
+        margin-top 5px
+
+
+

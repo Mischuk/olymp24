@@ -1,0 +1,183 @@
+.m_choose
+  position relative
+  height 640px
+  background url("../images/bg-2.jpg") no-repeat 50% 50%
+  background-size cover
+  @media screen and (max-width: 1000px)
+    height auto
+    padding-bottom 50px
+  .devices-wrap
+    width 63%
+    float left
+    position relative
+    height 100%
+    @media screen and (max-width: 1000px)
+      width 100%
+      float none
+      height 500px
+      overflow hidden
+      margin-top -50px
+    @media screen and (max-width: 670px)
+      height auto
+    .responsive-mobile
+      display none
+      @media screen and (max-width: 670px)
+        display inline-block
+        vertical-align middle
+        max-width 100%
+        width 100%
+        height auto
+        margin-top 50px
+  .desc
+    float right
+    width 37%
+    color #fff
+    @media screen and (max-width: 1000px)
+      float none
+      width 400px
+      margin-left auto
+      margin-right auto
+      text-align center
+      padding-top 40px
+    @media screen and (max-width: 420px)
+      width 100%
+    > .title
+      bold()
+      color $blue
+      font-size 24px
+    p
+      light()
+      font-size 18px
+    .cert
+      position relative
+      padding-left 40px
+      line-height 29px
+      light()
+      font-size 18px
+      margin-bottom 55px
+      @media screen and (max-width: 1000px)
+        display inline-block
+        vertical-align middle
+        margin-bottom 30px
+        margin-top 10px
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -111px -202px;
+        width: 25px;
+        height: 29px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+      &:before
+        content ''
+        width 70px
+        height 2px
+        background $blue
+        position absolute
+        left 0
+        bottom -25px
+        @media screen and (max-width: 1000px)
+          display none
+    .available
+      position relative
+      @media screen and (max-width: 1000px)
+        width 300px
+        text-align left
+        margin-left auto
+        margin-right auto
+      @media screen and (max-width: 420px)
+        width 280px
+      .title
+        margin-bottom 25px
+        @media screen and (max-width: 1000px)
+          text-align center
+      .desktop, .mobile, .app
+        margin-bottom 20px
+        position relative
+        padding-left 45px
+        @media screen and (max-width: 1000px)
+          width 250px
+          margin-left auto
+          margin-right auto
+      .desktop:after
+        content ""
+        background: url('../images/sprite.png') no-repeat -68px -202px;
+        width: 31px;
+        height: 25px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+      .mobile:after
+        content ""
+        background: url('../images/sprite.png') no-repeat -32px -201px;
+        width: 16px;
+        height: 26px;
+        position absolute
+        left 8px
+        top 50%
+        margin-top -(@height/2)
+      .app:after
+        content ""
+        background: url('../images/sprite.png') no-repeat -4px -201px;
+        width: 16px;
+        height: 18px;
+        position absolute
+        left 10px
+        top 50%
+        margin-top -(@height/2)
+  .devices
+    width 958px
+    height 526px
+    position absolute
+    right 0
+    top -13px
+    @media screen and (max-width: 1000px)
+      width 600px
+      position relative
+      left 0
+      top 0
+      margin-left auto
+      margin-right auto
+    @media screen and (max-width: 670px)
+      display none
+    .iphone
+      position absolute
+      width 259px
+      height 145px
+      bottom 45px
+      right 120px
+      background url("../images/iphone.png") no-repeat 0 0
+      z-index 300
+      @media screen and (max-width: 1000px)
+        right 120px
+    .ipad
+      position absolute
+      width 316px
+      height 386px
+      bottom 0
+      right 0
+      background url("../images/ipad.png") no-repeat 0 0
+      z-index 200
+      @media screen and (max-width: 1000px)
+        width 250px
+        height 320px
+        background-position -26px 0
+        bottom 65px
+        right 0
+    .imac
+      width 958px
+      height 526px
+      position absolute
+      bottom -20px
+      right -40px
+      background url("../images/imac.png") no-repeat 0 0
+      z-index 11
+      @media screen and (max-width: 1000px)
+        width 530px
+        height 500px
+        right auto
+        left 0
+        bottom 0
+        background-position -212px 0

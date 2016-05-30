@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olymp Trade</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- Styles -->
+    <link href="styles/vendor.css" rel="stylesheet" media="all">
+    <link href="styles/app.css" rel="stylesheet" media="all">
+    <!-- Javascript -->
+    <script src="scripts/plugins.js"></script>
+    <script src="scripts/app.js"></script>
+</head>
+<body>
+    <header class="m_header">
+        <div class="wrapper">
+            <h1 class="logo"><a href="#"></a></h1>
+            <div class="guarantee">
+                <div class="quotes">Котировки представлены<br>Thomson Reuters</div>
+                <div class="deposites">Депозиты хранятся<br>в европейском банке </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="m_lead">
+        <div class="wrap">
+            <div class="pattern"></div>
+        </div>
+        <div class="wrapper">
+            <div class="headling">НАЧНИТЕ КАРЬЕРУ ТРЕЙДЕРА СЕЙЧАС</div>
+            <div class="small-headling">И получите прибыльную торговую стратегию<br> «Японский мартин»</div>
+            <form action="form.php" method='post' class="m_lead-form form">
+                <div class="row">
+                    <div class="form-label form-label-inputs">
+                        <label class="input-icon-email">
+                            <input type="email" autocomplete="off" placeholder="Введите e-mail" name="email" class="form-input" required="required">
+                        </label>
+                    </div>
+                    <div class="form-label form-label-inputs">
+                        <label class="input-icon-password">
+                            <input type="password" placeholder="Придумайте пароль" name="password" class="form-input" required="required">
+                        </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-label">
+                        <div class="currency">
+                            <div class="title">Валюта депозита:</div>
+                            <div class="buttons">
+                                <div class="tooltip">Вы можете выбрать любую валюту счета. При пополнении торгового счета валютой, отличной от валюты счета, средства конвертируются по курсу вашего банка. Валюта счета выбирается при регистрации, в последствии валюту счета изменить нельзя</div>
+                                <label class="radio-custom">
+                                    <input name="form-currency" type="radio" value="USD" checked="checked"/>
+                                    <span class="radio-button"></span>
+                                    <span class="radio-label">Доллар</span>
+                                </label>
+                                <label class="radio-custom">
+                                    <input name="form-currency" type="radio" value="EUR"/>
+                                    <span class="radio-button"></span>
+                                    <span class="radio-label">Евро</span>
+                                </label>
+                                <label class="radio-custom">
+                                    <input name="form-currency" type="radio" value="RUB"/>
+                                    <span class="radio-button"></span>
+                                    <span class="radio-label">Рубль</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-label">
+                        <div class="rules">
+                            <div>
+                                <input id="form-rules" type="checkbox" name="form-rules" checked="checked"/>
+                                <label for="form-rules" class="check-older">
+                                    <span class="check-button"></span>
+                                    <span class="check-label">Мне есть 18 лет и я согласен с <a href="#">правилами сервиса</a></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-label-hidden">
+                    <input type="hidden" name="input_type">
+                </div>
+                <div class="form-label-submit">
+                    <button type="submit" class="sbm-dis form-submit button-action"><span class="label">Зарегистрироваться<span class="mobile-hide"> и получить стратегию</span></span></button>
+                </div>
+            </form>
+            <div class="pluses">
+                <div class="demo">Учебный счет на $10 000,<br>чтобы протестировать стратегию</div>
+                <div class="mobile-cl"></div>
+                <div class="standart">Торговый счет со 100% бонусом,<br>на первый депозит</div>
+            </div>
+            <div class="notify">Письмо со стратегией придет на указанную почту через <span class="blue">5 минут после регистрации</span></div>
+        </div>
+    </section>
+
+    <section class="m_how">
+        <div class="wrapper">
+            <div class="headling">УСПЕШНАЯ КАРЬЕРА ВМЕСТЕ С OLYMP TRADE</div>
+            <div class="row">
+                <div class="desc">
+                    <div class="title">КАК ЭТО РАБОТАЕТ</div>
+                    <p>Торговля бинарными опционами - это краткосрочные сделки с высокой прибылью.<br> Суть торговли заключается в приобритении опциона выбранного актива с прогнозом на увеличение или снижение его стоимости.</p>
+                </div>
+                <div class="video">
+                    <video id="my-video" class="video-js"
+                        preload="none"
+                        width="460"
+                        height="290"
+                        poster="images/poster.png">
+                            <source src="videos/howto.mp4" type='video/mp4'>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m_choose">
+        <div class="wrapper">
+            <div class="headling">OLYMP TRADE - ВЫБОР ЛУЧШИХ</div>
+            <div class="row">
+                <div class="devices-wrap">
+                    <img class="responsive-mobile" src="images/devices.png" alt="">
+                    <div class="devices">
+                        <div class="imac"></div>
+                        <div class="ipad"></div>
+                        <div class="iphone"></div>
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="title">СОВРЕМЕННАЯ ПЛАТФОРМА</div>
+                    <p>Удобная и стабильная платформа,<br> возможность заключения сделок в один клик</p>
+                    <div class="cert">Сертификат <span class="blue bold">FINANCE.COM</span></div>
+                    <div class="available">
+                        <div class="title">ДОСТУПНО ДЛЯ <span class="blue bold">ВСЕХ УСТРОЙСТВ</span></div>
+                        <div class="desktop">Работа через браузер</div>
+                        <div class="mobile">Мобильная версия</div>
+                        <div class="app">Мобильное приложение</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m_numbers">
+        <div class="wrapper">
+            <div class="col-1-of-3">
+                <div class="number"><span class="counter">0</span>%</div>
+                <div class="desc">КОМИССИИ ПРИ<BR>СНЯТИИ СРЕДСТВ</div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="number"><span class="small">до</span><span class="counter">90</span>%</div>
+                <div class="desc">ПРИБЫЛИ ПО<BR>СДЕЛКЕ</div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="number"><span class="small">до</span><span class="counter">60</span>%</div>
+                <div class="desc">ПРИ ОТМЕНЕ<BR>СДЕЛКИ</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m_values">
+        <div class="wrapper">
+            <div class="headling">БОЛЬШОЙ ВЫБОР АКТИВОВ ДЛЯ ТОРГОВЛИ</div>
+            <div class="tabs">
+                <ul class="tabs-nav">
+                    <li><a href="#tab-1"><span class="icon-1"></span>Валютные пары</a></li>
+                    <li><a href="#tab-2"><span class="icon-2"></span>Акции </a></li>
+                    <li><a href="#tab-3"><span class="icon-3"></span>Фондовые индексы</a></li>
+                </ul>
+                <div class="tabs-content">
+                    <div class="tabs-item" id="tab-1">
+                        <div class="desktop">
+                            <div class="row">
+                                <div class="icon-1">Apple</div>
+                                <div class="icon-2">IBM</div>
+                                <div class="icon-3">Boeing</div>
+                                <div class="icon-4">Tesla</div>
+                                <div class="icon-5">Facebook</div>
+                            </div>
+                            <div class="row">
+                                <div class="icon-6">Google</div>
+                                <div class="icon-7">Coca-Cola</div>
+                                <div class="icon-8">McDonalds</div>
+                                <div class="icon-9">Microsoft</div>
+                                <div class="icon-10">Visa</div>
+                            </div>
+                        </div>
+                        <div class="mobile">
+                            <div class="icon-1">Apple</div>
+                            <div class="icon-2">IBM</div>
+                            <div class="icon-3">Boeing</div>
+                            <div class="icon-4">Tesla</div>
+                            <div class="icon-5">Facebook</div>
+                            <div class="icon-6">Google</div>
+                            <div class="icon-7">Coca-Cola</div>
+                            <div class="icon-8">McDonalds</div>
+                            <div class="icon-9">Microsoft</div>
+                            <div class="icon-10">Visa</div>
+                        </div>
+                    </div>
+                    <div class="tabs-item" id="tab-2">
+                        <div class="desktop">
+                            <div class="row">
+                                <div class="icon-6">Eius</div>
+                                <div class="icon-10">In altera</div>
+                                <div class="icon-3">Dolor</div>
+                                <div class="icon-8">Mel an dolore</div>
+                                <div class="icon-4">Sit AMET</div>
+                            </div>
+                            <div class="row">
+                                <div class="icon-1">Lorem</div>
+                                <div class="icon-7">Elitr an</div>
+                                <div class="icon-2">Ipsum</div>
+                                <div class="icon-5">Eum eros</div>
+                                <div class="icon-9">Theophrastus</div>
+                            </div>
+                        </div>
+                        <div class="mobile">
+                            <div class="icon-6">Eius</div>
+                            <div class="icon-10">In altera</div>
+                            <div class="icon-3">Dolor</div>
+                            <div class="icon-8">Mel an dolore</div>
+                            <div class="icon-4">Sit AMET</div>
+                            <div class="icon-1">Lorem</div>
+                            <div class="icon-7">Elitr an</div>
+                            <div class="icon-2">Ipsum</div>
+                            <div class="icon-5">Eum eros</div>
+                            <div class="icon-9">Theophrastus</div>
+                        </div>
+                    </div>
+                    <div class="tabs-item" id="tab-3">
+                        <div class="desktop">
+                            <div class="row">
+                                <div class="icon-6">Eius</div>
+                                <div class="icon-7">Elitr an</div>
+                                <div class="icon-8">Mel an dolore</div>
+                                <div class="icon-9">Theophrastus</div>
+                                <div class="icon-10">In altera</div>
+                            </div>
+                            <div class="row">
+                                <div class="icon-1">Lorem</div>
+                                <div class="icon-2">Ipsum</div>
+                                <div class="icon-3">Dolor</div>
+                                <div class="icon-4">Sit AMET</div>
+                                <div class="icon-5">Eum eros</div>
+                            </div>
+                        </div>
+                        <div class="mobile">
+                            <div class="icon-6">Eius</div>
+                            <div class="icon-7">Elitr an</div>
+                            <div class="icon-8">Mel an dolore</div>
+                            <div class="icon-9">Theophrastus</div>
+                            <div class="icon-10">In altera</div>
+                            <div class="icon-1">Lorem</div>
+                            <div class="icon-2">Ipsum</div>
+                            <div class="icon-3">Dolor</div>
+                            <div class="icon-4">Sit AMET</div>
+                            <div class="icon-5">Eum eros</div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="values-footer">
+                <div class="profit">Получайте прибыль, торгуя на <span class="blue bold">33+</span> <br>активах: валюта, акции, индексы, сырье.</div>
+                <div class="quotes">Поставщиком котировок является <span class="bold blue block">THOMSON REUTERS</span> <span class="small">прямая интеграция с платформой Olymp Trade</span></div>
+             </div>
+        </div>
+    </section>
+
+    <section class="m_safe">
+        <div class="wrapper">
+            <div class="image"></div>
+            <div class="headling">МАКСИМАЛЬНАЯ ЗАЩИТА ОТ РИСКОВ</div>
+            <div class="small-headling"><div class="title">ВСТРОЕННЫЕ В ПЛАТФОРМУ<BR>ПРОГНОЗИРУЮЩИЕ ИНДИКАТОРЫ</div></div>
+            <div class="extra-small-headling"><div class="title">Используйте индикаторы для повышения <br>точности прогнозов и количества прибыльных сделок</div></div>
+            <div class="how">
+                <div class="title">КАК ТОРГОВАТЬ ПО ИНДИКАТОРАМ</div>
+                <ul>
+                    <li><a class="popup-youtube" href='https://www.youtube.com/watch?v=9s0JkeCf5Z4'>SMA</a></li>
+                    <li><a class="popup-youtube" href="https://www.youtube.com/watch?v=-6P--u8eTWk">MACD</a></li>
+                    <li><a class="popup-youtube" href="https://www.youtube.com/watch?v=n44Lue7GL-o">RSI</a></li>
+                    <li><a class="popup-youtube" href="https://www.youtube.com/watch?v=9s0JkeCf5Z4">PARABOLIC</a></li>
+                    <li><a class="popup-youtube" href="https://www.youtube.com/watch?v=AzBG9kf4n98">STOCHASTIC</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="m_guarantee">
+        <div class="wrapper">
+            <div class="headling">ГАРАНТИЯ ФИНАНСОВОГО УРЕГУЛИРОВАНИЯ</div>
+            <div class="small-headling">И ОБРАБОТКИ ДАННЫХ</div>
+            <div class="steps">
+                <div class="step-1">
+                    <div class="icon"></div>
+                    <div class="desc">Член финансовой<br>комиссии с наивысшим<br>рейтингом А+</div>
+                </div>
+                <div class="step-2">
+                    <div class="icon"></div>
+                    <div class="desc">Регулируется ЦРОФР<br>№ ЦРФ RU 0395<br>AA VV0088</div>
+                </div>
+                 <div class="step-3">Olymp Trade – надежный брокер, который обладает лицензией российского регулятора ЦРОФР, а также является членом международной Финансовой Комиссии. Это является подтверждением высокого качества наших услуг, и гарантирует каждому трейдеру страхование депозита, всестороннюю поддержку и оперативное решение всех возникающих вопросов.</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m_hook">
+        <div class="wrapper">
+            <div class="right">
+                <div class="large-title">НАЧНИТЕ КАРЬЕРУ ТРЕЙДЕРА<BR>ПРЯМО СЕЙЧАС!</div>
+                <div class="small-title">Получите торговую стратегию для прибыльной торговли</div>
+                <div class="m_small_form">
+                    <form action="form.php" method='post' class="m_lead-form form">
+                        <div class="row">
+                            <div class="form-label form-label-inputs">
+                                <label class="input-icon-email">
+                                    <input type="email" autocomplete="off" placeholder="Введите e-mail" name="email" class="form-input" required="required">
+                                </label>
+                            </div>
+                            <div class="form-label form-label-inputs">
+                                <label class="input-icon-password">
+                                    <input type="password" placeholder="Придумайте пароль" name="password" class="form-input" required="required">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-label-submit">
+                            <button type="submit" class="sbm-dis form-submit button-action"><span class="label">Начать карьеру трейдера</span></button>
+                        </div>
+                        <div class="row">
+                            <div class="form-label">
+                                <div class="currency">
+                                    <div class="title">Валюта депозита:</div>
+                                    <div class="buttons">
+                                        <div class="tooltip">Вы можете выбрать любую валюту счета. При пополнении торгового счета валютой, отличной от валюты счета, средства конвертируются по курсу вашего банка. Валюта счета выбирается при регистрации, в последствии валюту счета изменить нельзя</div>
+                                        <label class="radio-custom">
+                                            <input name="form-currency" type="radio" value="USD" checked="checked"/>
+                                            <span class="radio-button"></span>
+                                            <span class="radio-label">Доллар</span>
+                                        </label>
+                                        <label class="radio-custom">
+                                            <input name="form-currency" type="radio" value="EUR"/>
+                                            <span class="radio-button"></span>
+                                            <span class="radio-label">Евро</span>
+                                        </label>
+                                        <label class="radio-custom">
+                                            <input name="form-currency" type="radio" value="RUB"/>
+                                            <span class="radio-button"></span>
+                                            <span class="radio-label">Рубль</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-label">
+                                <div class="rules">
+                                    <div>
+                                        <input id="form-rules-hook" type="checkbox" name="form-rules-hook" checked="checked"/>
+                                        <label for="form-rules-hook" class="check-older">
+                                            <span class="check-button"></span>
+                                            <span class="check-label">Мне есть 18 лет и я согласен с <a href="#">правилами сервиса</a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-label-hidden">
+                            <input type="hidden" name="input_type">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m_cashout">
+        <div class="wrapper">
+            <div class="headling">ПОЛУЧИТЕ СРЕДСТВА УДОБНЫМ ОБРАЗОМ</div>
+            <div class="icons">
+                <div class="icon-1"></div>
+                <div class="icon-2"></div>
+                <div class="icon-3"></div>
+                <div class="icon-4 desktop-hide"></div>
+            </div>
+            <div class="icons">
+                <div class="icon-4 mobile-hide"></div>
+                <div class="icon-5"></div>
+                <div class="icon-6"></div>
+                <div class="icon-7"></div>
+                <div class="icon-8"></div>
+            </div>
+            <div class="guarantee">
+                <div class="deposites">Депозиты хранятся<br>в европейском банке </div>
+                <div class="defend">Соединение защищено SSL<br>certified 256 bit Secure Proccessing</div>
+                <div class="quotes">Котировки представлены<br>Thomson Reuters</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="m_footer">
+        <div class="wrapper">
+            <div class="logo"><a href="#"></a></div>
+            <div class="warning">
+                <div class="title">ОБЩЕЕ ПРЕДУПРЕЖДЕНИЕ О РИСКЕ</div>
+                <p>Торговля бинарными опционами является высокорискованной и может привести к потере всех ваших инвестииций. Таким образом, бинарные опционы могут не подходить для всех инвесторов. Вы не должны инвестировать деньги, которые не можете позволить себе потерять.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

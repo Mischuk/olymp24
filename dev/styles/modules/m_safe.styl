@@ -1,0 +1,108 @@
+.m_safe
+  position relative
+  height 552px
+  background url("../images/bg-4.jpg") no-repeat center right
+  background-size cover
+  color #fff
+  @media screen and (max-width: 740px)
+    height auto
+    padding-bottom 50px
+  .image
+    position absolute
+    width 652px
+    height 417px
+    background url("../images/phone.png") no-repeat 0 0
+    right 480px
+    bottom 0
+    @media screen and (max-width: 740px)
+      display none
+  .small-headling
+    clearfix()
+    padding-right 100px
+    @media screen and (max-width: 740px)
+      padding-right 0
+    .title
+      bold()
+      width 580px
+      float right
+      font-size 30px
+      border-left 5px solid $blue
+      line-height 1
+      padding-left 15px
+      text-shadow 1px 1px 1px rgba(0,0,0,.25)
+      @media screen and (max-width: 740px)
+        padding-left 0
+        border-left none
+        width 100%
+        text-align center
+        font-size 24px
+  .extra-small-headling
+    clearfix()
+    margin 20px 0
+    padding-right 100px
+    @media screen and (max-width: 740px)
+      padding-right 0
+    .title
+      float right
+      width 480px
+      light()
+      font-size 18px
+      text-shadow 1px 1px 1px rgba(0,0,0,.25)
+      @media screen and (max-width: 740px)
+        text-align center
+        float none
+        width 100%
+  .how
+    padding-right 100px
+    width 450px
+    float right
+    @media screen and (max-width: 740px)
+      padding-right 0
+      width 100%
+      text-align center
+      ul
+        width 170px
+        margin-left auto
+        margin-right auto
+        text-align left
+    .title
+      bold()
+      color $blue
+      font-size 18px
+      margin-bottom 10px
+    li
+      a
+        display block
+        width 155px
+        height 30px
+        line-height 30px
+        color #fff
+        background rgba(255,255,255,0)
+        border-radius 20px
+        light()
+        font-size 18px
+        padding-left 40px
+        position relative
+        anim()
+        &:hover
+          background rgba(255,255,255,.25)
+        &:before
+          content ''
+          width 20px
+          height 20px
+          position absolute
+          left 6px
+          top 50%
+          margin-top -(@height/2)
+          background rgba(255,255,255,.15)
+          border-radius 50%
+        &:after
+          content ""
+          position absolute
+          triangle(right, 5px, #fff)
+          left 14px
+          top 50%
+          margin-top -5px
+
+
+

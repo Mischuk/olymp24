@@ -1,0 +1,121 @@
+.m_lead
+  background #222
+  height 750px
+  margin 0 auto
+  overflow hidden
+  perspective 1200px
+  @media screen and (max-width: 1000px)
+    background url('../images/g.gif') no-repeat 50% 50%
+    background-size cover
+    perspective 1000px
+  @media screen and (max-width: 740px)
+    height auto
+    padding-bottom 50px
+  &:after
+    box-shadow: inset 5px 5px 80px rgba(0,0,0,.8);
+    content ''
+    position absolute
+    top 0
+    width 100%
+    height 100%
+    z-index 10
+    background rgba(11, 40, 50, .75)
+  .wrap
+    position absolute
+    top -60%
+    left -10%
+    height 300%
+    width 200%
+    transform rotateX(20deg) rotateY(40deg) rotateZ(-20deg)
+    z-index 5
+    @media screen and (max-width: 1000px)
+      display none
+  .pattern
+    background-size 500px
+    position absolute
+    top 0
+    left 0
+    height 100%
+    width 400%
+    animation scroll linear 80s infinite
+    background-image url('../images/g.gif')
+  .wrapper
+    z-index 20
+    padding-top 90px
+  .small-headling
+    light()
+    color #fff
+    font-size 28px
+    line-height 40px
+    text-align center
+    margin-bottom 20px
+    text-shadow 1px 1px 0 rgba(0,0,0,.75)
+    @media screen and (max-width: 640px)
+      font-size 21px
+      line-height 1.2
+      br
+        display none
+  .pluses
+    clearfix()
+    width 700px
+    margin-left auto
+    margin-right auto
+    margin-top 30px
+    margin-bottom 30px
+    @media screen and (max-width: 740px)
+      width 100%
+      text-align center
+    .demo, .standart
+      light()
+      position relative
+      padding-left 70px
+      color #fff
+      font-size 16px
+      width 50%
+      float left
+      @media screen and (max-width: 740px)
+        float none
+        display inline-block
+        vertical-align middle
+        width 330px
+        text-align left
+        margin-top 10px
+        margin-bottom 10px
+      @media screen and (max-width: 380px)
+        width 280px
+        font-size 13px
+      &:before
+        content ''
+        width 2px
+        height 32px
+        background #55656c
+        position absolute
+        left 50px
+        top 50%
+        margin-top -(@height/2)
+    .demo
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -3px -150px;
+        width: 39px;
+        height: 33px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+    .standart
+      &:after
+        content ''
+        background: url('../images/sprite.png') no-repeat -55px -150px;
+        width: 29px;
+        height: 34px;
+        position absolute
+        left 0
+        top 50%
+        margin-top -(@height/2)
+  .notify
+    light()
+    color #fff
+    text-align center
+
+

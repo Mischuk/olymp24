@@ -1,0 +1,218 @@
+/* Форма */
+.form
+  &-input   /* input */
+    width 100%
+    height 59px
+    border 1px solid #96b1bc
+    color #96b1bc
+    display block
+    outline none
+    &.valid
+      border 1px solid #339E36 !important
+  &-label
+    position relative
+  &-submit   /* Кнопка submit */
+    cursor pointer
+    outline none
+    -webkit-appearance none
+label.error
+  display none !important
+  &:after
+    content ''
+    position absolute
+    bottom -10px
+    left 20px
+    width 0
+    height 0
+    border-left 7px solid transparent
+    border-right 7px solid transparent
+    border-top 10px solid rgba(255, 216, 111, .88)
+
+
+.m_lead-form
+  width 590px
+  margin-left auto
+  margin-right auto
+  position relative
+  color #fff
+  @media screen and (max-width: 740px)
+    width 100%
+  .row
+    clearfix()
+    margin-bottom 20px
+  .form-label-inputs
+    width 270px
+    float left
+    @media screen and (max-width: 740px)
+      float none
+      margin-left auto
+      margin-right auto
+      margin-bottom 20px
+    & + .form-label-inputs
+      float right
+      @media screen and (max-width: 740px)
+        float none
+    input
+      width 100%
+      font-size 18px
+      line-height 18px
+      color #fff
+      background rgba(255,255,255,.07)
+      border 1px solid #fff
+      border-radius 10px 0 10px 0
+      padding 15px
+      padding-left 40px
+      anim()
+      &:focus
+        border-color $blue
+        background rgba(255,255,255,.15)
+  .currency
+    @media screen and (max-width: 740px)
+      text-align center
+      margin-top 0
+    .title, .buttons
+      display inline-block
+      vertical-align middle
+    .title
+      margin-right 20px
+      cursor default
+  .form-label-submit
+    width 460px
+    height 64px
+    margin 0 auto
+    @media screen and (max-width: 740px)
+      width 270px
+    button
+      width: 460px;
+      height: 64px;
+      border none
+      font-size 18px
+      color #fff
+      line-height 50px
+      position relative
+      background none
+      &:after
+        content ''
+        background: url('../images/buttons.png') no-repeat -8px -229px;
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+      &:before
+        content ''
+        background: url('../images/buttons.png') no-repeat -8px -307px
+        position absolute
+        left 0
+        top 0
+        width 100%
+        height 100%
+        opacity 0
+      @media screen and (max-width: 740px)
+        width: 268px;
+        height: 57px;
+        margin-left auto
+        margin-right auto
+        &:after
+          background: url('../images/buttons.png') no-repeat -8px -11px;
+        &:before
+          background-position -8px -80px
+        &:active
+          &:before
+            background-position -8px -146px
+      span.label
+        position relative
+        z-index 10
+      &:hover
+        &:after
+          opacity 0
+          transition opacity .25s ease-out
+        &:before
+          opacity 1
+      &:active
+        &:before
+          background-position -8px -385px
+          top 2px
+        span.label
+          top 2px
+  .buttons:hover
+    .tooltip
+      opacity 1
+      transform scale(1) translateY(0px)
+  .tooltip
+    position absolute
+    left 275px
+    bottom 35px
+    z-index 20
+    background: rgba(0,0,0,.95);
+    border: 1px solid #303132;
+    box-shadow 1px 1px 1px rgba(0,0,0,.25)
+    padding 15px
+    font-size 14px
+    width 260px
+    border-radius 20px 0 20px 0
+    transform scale(0) translateY(-50px)
+    opacity 0
+    anim()
+    light()
+    @media screen and (max-width: 590px)
+      display none !important
+    &:before
+      content ''
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 14px 20px 0 0px;
+      border-color: #303132 transparent transparent transparent;
+      position absolute
+      left -1px
+      bottom -14px
+    &:after
+      content ''
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 12px 18px 0 0px;
+      border-color: rgba(0,0,0,.95) transparent transparent transparent;
+      position absolute
+      left 0
+      bottom -12px
+  .rules
+    @media screen and (max-width: 740px)
+      text-align center
+    @media screen and (max-width: 520px)
+      text-align left
+      width 280px
+      margin-left auto
+      margin-right auto
+      overflow hidden
+      label
+        position relative
+        padding-left 20px
+        .check-button
+          position absolute !important
+          left 0
+          top -4px
+
+.input-icon-email
+  position relative
+  display block
+  &:after
+    content ''
+    background: url('../images/sprite.png') no-repeat -3px -97px;
+    width: 17px;
+    height: 13px;
+    position absolute
+    left 15px
+    top 22px
+.input-icon-password
+  position relative
+  display block
+  &:after
+    content ''
+    background: url('../images/sprite.png') no-repeat -32px -97px;
+    width: 12px;
+    height: 17px;
+    position absolute
+    left 15px
+    top 21px

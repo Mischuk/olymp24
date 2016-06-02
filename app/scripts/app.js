@@ -93,8 +93,8 @@ $(document).ready(function() {
 
     var $tabsNavLink = $('.tabs-nav a');
     $('.tabs-item').hide();
-    $('.tabs-content').find('.tabs-item:first').show();
-    $('.tabs-nav').find('li:first').find('a').addClass('current');
+    $('.tabs-content').find('.tabs-item').eq(1).show();
+    $('.tabs-nav').find('li').eq(1).find('a').addClass('current');
 
     $tabsNavLink.click(function(e) {
       e.preventDefault();

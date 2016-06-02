@@ -34,7 +34,7 @@
     color #fff
     @media screen and (max-width: 1000px)
       float none
-      width 400px
+      width 100%
       margin-left auto
       margin-right auto
       text-align center
@@ -82,24 +82,29 @@
     .available
       position relative
       @media screen and (max-width: 1000px)
-        width 300px
-        text-align left
         margin-left auto
         margin-right auto
+        width 100%
+        text-align center
       @media screen and (max-width: 420px)
         width 280px
       .title
         margin-bottom 25px
         @media screen and (max-width: 1000px)
           text-align center
+          width 100%
+          display block
       .desktop, .mobile, .app
         margin-bottom 20px
         position relative
         padding-left 45px
         @media screen and (max-width: 1000px)
-          width 250px
+          width auto
           margin-left auto
           margin-right auto
+          display inline-block
+          vertical-align middle
+
       .desktop:after
         content ""
         background: url('../images/sprite.png') no-repeat -68px -202px;
@@ -118,6 +123,8 @@
         left 8px
         top 50%
         margin-top -(@height/2)
+        @media screen and (max-width: 1000px)
+          left 21px
       .app:after
         content ""
         background: url('../images/sprite.png') no-repeat -4px -201px;
@@ -127,6 +134,8 @@
         left 10px
         top 50%
         margin-top -(@height/2)
+        @media screen and (max-width: 1000px)
+          left 21px
   .devices
     width 958px
     height 526px

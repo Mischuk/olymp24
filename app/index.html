@@ -14,6 +14,7 @@
     <script src="scripts/app.js"></script>
 </head>
 <body>
+
     <header class="m_header">
         <div class="wrapper">
             <h1 class="logo"><a href="#"></a></h1>
@@ -51,7 +52,7 @@
                             <div class="buttons">
                                 <div class="tooltip">Вы можете выбрать любую валюту счета. При пополнении торгового счета валютой, отличной от валюты счета, средства конвертируются по курсу вашего банка. Валюта счета выбирается при регистрации, в последствии валюту счета изменить нельзя</div>
                                 <label class="radio-custom">
-                                    <input name="form-currency" type="radio" value="USD" checked="checked"/>
+                                    <input name="form-currency" type="radio" value="USD"/>
                                     <span class="radio-button"></span>
                                     <span class="radio-label">Доллар</span>
                                 </label>
@@ -61,7 +62,7 @@
                                     <span class="radio-label">Евро</span>
                                 </label>
                                 <label class="radio-custom">
-                                    <input name="form-currency" type="radio" value="RUB"/>
+                                    <input name="form-currency" type="radio" value="RUB" checked="checked"/>
                                     <span class="radio-button"></span>
                                     <span class="radio-label">Рубль</span>
                                 </label>
@@ -76,7 +77,8 @@
                                 <input id="form-rules" type="checkbox" name="form-rules" checked="checked"/>
                                 <label for="form-rules" class="check-older">
                                     <span class="check-button"></span>
-                                    <span class="check-label">Мне есть 18 лет и я согласен с <a href="#">правилами сервиса</a></span>
+                                    <span class="check-label">Мне есть 18 лет и я согласен с <a href="#" onclick="window.open('https://olymptrade.com/terms', '',
+                        'scrollbars=1,height='+Math.min(600, screen.availHeight)+',width='+Math.min(600, screen.availWidth)); return false;">правилами сервиса</a></span>
                                 </label>
                             </div>
                         </div>
@@ -169,11 +171,41 @@
             <div class="tabs">
                 <ul class="tabs-nav">
                     <li><a href="#tab-1"><span class="icon-1"></span>Валютные пары</a></li>
-                    <li><a href="#tab-2"><span class="icon-2"></span>Акции </a></li>
+                    <li><a class="current" href="#tab-2"><span class="icon-2"></span>Акции </a></li>
                     <li><a href="#tab-3"><span class="icon-3"></span>Фондовые индексы</a></li>
                 </ul>
                 <div class="tabs-content">
                     <div class="tabs-item" id="tab-1">
+                        <div class="desktop">
+                            <div class="row">
+                                <div class="values">AUD <span>/</span> USD</div>
+                                <div class="values">EUR <span>/</span> RUB</div>
+                                <div class="values">USD <span>/</span> CAD</div>
+                                <div class="values">EUR <span>/</span> JPY</div>
+                                <div class="values">EUR <span>/</span> CHF</div>
+                            </div>
+                            <div class="row">
+                                <div class="values">EUR <span>/</span> USD</div>
+                                <div class="values">USD <span>/</span> JPY</div>
+                                <div class="values">GBP <span>/</span> USD</div>
+                                <div class="values">USD <span>/</span> CHF</div>
+                                <div class="values">USD <span>/</span> RUB</div>
+                            </div>
+                        </div>
+                        <div class="mobile">
+                            <div class="values">AUD <span>/</span> USD</div>
+                            <div class="values">EUR <span>/</span> RUB</div>
+                            <div class="values">USD <span>/</span> CAD</div>
+                            <div class="values">EUR <span>/</span> JPY</div>
+                            <div class="values">EUR <span>/</span> CHF</div>
+                            <div class="values">EUR <span>/</span> USD</div>
+                            <div class="values">USD <span>/</span> JPY</div>
+                            <div class="values">GBP <span>/</span> USD</div>
+                            <div class="values">USD <span>/</span> CHF</div>
+                            <div class="values">USD <span>/</span> RUB</div>
+                        </div>
+                    </div>
+                    <div class="tabs-item" id="tab-2">
                         <div class="desktop">
                             <div class="row">
                                 <div class="icon-1">Apple</div>
@@ -203,64 +235,14 @@
                             <div class="icon-10">Visa</div>
                         </div>
                     </div>
-                    <div class="tabs-item" id="tab-2">
-                        <div class="desktop">
-                            <div class="row">
-                                <div class="icon-6">Eius</div>
-                                <div class="icon-10">In altera</div>
-                                <div class="icon-3">Dolor</div>
-                                <div class="icon-8">Mel an dolore</div>
-                                <div class="icon-4">Sit AMET</div>
-                            </div>
-                            <div class="row">
-                                <div class="icon-1">Lorem</div>
-                                <div class="icon-7">Elitr an</div>
-                                <div class="icon-2">Ipsum</div>
-                                <div class="icon-5">Eum eros</div>
-                                <div class="icon-9">Theophrastus</div>
-                            </div>
-                        </div>
-                        <div class="mobile">
-                            <div class="icon-6">Eius</div>
-                            <div class="icon-10">In altera</div>
-                            <div class="icon-3">Dolor</div>
-                            <div class="icon-8">Mel an dolore</div>
-                            <div class="icon-4">Sit AMET</div>
-                            <div class="icon-1">Lorem</div>
-                            <div class="icon-7">Elitr an</div>
-                            <div class="icon-2">Ipsum</div>
-                            <div class="icon-5">Eum eros</div>
-                            <div class="icon-9">Theophrastus</div>
-                        </div>
-                    </div>
                     <div class="tabs-item" id="tab-3">
-                        <div class="desktop">
-                            <div class="row">
-                                <div class="icon-6">Eius</div>
-                                <div class="icon-7">Elitr an</div>
-                                <div class="icon-8">Mel an dolore</div>
-                                <div class="icon-9">Theophrastus</div>
-                                <div class="icon-10">In altera</div>
-                            </div>
-                            <div class="row">
-                                <div class="icon-1">Lorem</div>
-                                <div class="icon-2">Ipsum</div>
-                                <div class="icon-3">Dolor</div>
-                                <div class="icon-4">Sit AMET</div>
-                                <div class="icon-5">Eum eros</div>
-                            </div>
+                        <div class="row">
+                            <div class="icon-11">Dow Jones</div>
+                            <div class="icon-12">Standart & Poor's</div>
                         </div>
-                        <div class="mobile">
-                            <div class="icon-6">Eius</div>
-                            <div class="icon-7">Elitr an</div>
-                            <div class="icon-8">Mel an dolore</div>
-                            <div class="icon-9">Theophrastus</div>
-                            <div class="icon-10">In altera</div>
-                            <div class="icon-1">Lorem</div>
-                            <div class="icon-2">Ipsum</div>
-                            <div class="icon-3">Dolor</div>
-                            <div class="icon-4">Sit AMET</div>
-                            <div class="icon-5">Eum eros</div>
+                        <div class="row">
+                            <div class="icon-13">DAX</div>
+                            <div class="icon-14">NASDAQ</div>
                         </div>
                     </div>
                 </div>
@@ -298,11 +280,11 @@
             <div class="steps">
                 <div class="step-1">
                     <div class="icon"></div>
-                    <div class="desc">Член финансовой<br>комиссии с наивысшим<br>рейтингом А+</div>
+                    <div class="desc"><a href="javascript:;" onclick="window.open('http://financialcommission.org/ru/2016/02/25/financial-commission-announces-olymp-trade-as-latest-member-firm/', '', 'scrollbars=1,height='+Math.min(500, screen.availHeight)+',width='+Math.min(500, screen.availWidth)); return false;">Член финансовой<br>комиссии с наивысшим<br>рейтингом А+</a></div>
                 </div>
                 <div class="step-2">
                     <div class="icon"></div>
-                    <div class="desc">Регулируется ЦРОФР<br>№ ЦРФ RU 0395<br>AA VV0088</div>
+                    <div class="desc"><a href="href="javascript:;" onclick="window.open('http://crofr.net/index.php?page=smartex_international_ltd_2016', '', 'scrollbars=1,height='+Math.min(500, screen.availHeight)+',width='+Math.min(500, screen.availWidth)); return false;"">Регулируется ЦРОФР<br>№ ЦРФ RU 0395<br>AA VV0088</a></div>
                 </div>
                  <div class="step-3">Olymp Trade – надежный брокер, который обладает лицензией российского регулятора ЦРОФР, а также является членом международной Финансовой Комиссии. Это является подтверждением высокого качества наших услуг, и гарантирует каждому трейдеру страхование депозита, всестороннюю поддержку и оперативное решение всех возникающих вопросов.</div>
             </div>
@@ -338,7 +320,7 @@
                                     <div class="buttons">
                                         <div class="tooltip">Вы можете выбрать любую валюту счета. При пополнении торгового счета валютой, отличной от валюты счета, средства конвертируются по курсу вашего банка. Валюта счета выбирается при регистрации, в последствии валюту счета изменить нельзя</div>
                                         <label class="radio-custom">
-                                            <input name="form-currency" type="radio" value="USD" checked="checked"/>
+                                            <input name="form-currency" type="radio" value="USD"/>
                                             <span class="radio-button"></span>
                                             <span class="radio-label">Доллар</span>
                                         </label>
@@ -348,7 +330,7 @@
                                             <span class="radio-label">Евро</span>
                                         </label>
                                         <label class="radio-custom">
-                                            <input name="form-currency" type="radio" value="RUB"/>
+                                            <input name="form-currency" type="radio" value="RUB" checked="checked"/>
                                             <span class="radio-button"></span>
                                             <span class="radio-label">Рубль</span>
                                         </label>
@@ -363,7 +345,8 @@
                                         <input id="form-rules-hook" type="checkbox" name="form-rules-hook" checked="checked"/>
                                         <label for="form-rules-hook" class="check-older">
                                             <span class="check-button"></span>
-                                            <span class="check-label">Мне есть 18 лет и я согласен с <a href="#">правилами сервиса</a></span>
+                                            <span class="check-label">Мне есть 18 лет и я согласен с <a href="#" onclick="window.open('https://olymptrade.com/terms', '',
+                        'scrollbars=1,height='+Math.min(600, screen.availHeight)+',width='+Math.min(600, screen.availWidth)); return false;">правилами сервиса</a></span>
                                         </label>
                                     </div>
                                 </div>
